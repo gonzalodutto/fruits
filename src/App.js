@@ -1,13 +1,42 @@
 import "./App.css";
 import Title from "./components/Title";
 import FruitCard from "./components/FruitCard";
+import Pokemon from "./components/Pokemon";
 
 function App() {
   return (
     <div className="App">
-      {/* <main>
+      <main>
         <Title content="Some Simple Title via <<Props>>" />
-      </main> */}
+      </main>
+      <Pokemon
+        name="Charizard"
+        weight={90}
+        awesome={true}
+        terrifying={false}
+        abilities={["Blaze", "Solar power", "Tough claws", "Drought"]}
+      />
+      <Pokemon
+        name="Bulbasaur"
+        weight={6.9}
+        awesome={true}
+        terrifying={false}
+        abilities={["Overgrow", "Chlorophyll"]}
+      />
+      <Pokemon
+        name="Mewtwo"
+        weight={122}
+        awesome={true}
+        terrifying={true}
+        abilities={["Pressure", "Unnerve", "Steadfast", "Insomnia"]}
+      />
+      <Pokemon
+        name="Mega beedrill"
+        weight={65}
+        awesome={false}
+        terrifying={true}
+        abilities={["Intimidate", "Unnerve"]}
+      />
       <FruitCard
         image="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
         name="Banana"
